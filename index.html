@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="content">
-      <div class="gallery">
-        <img src="#" width="400px" id="myPicture" alt="some image" />
-        <img src="#" width="400px" id="myPicture2" alt="some image" />
+    <div class="gallery">
+      <div class="left">
+        <img src="#" width="30%" id="myPicture" alt="some image" />
       </div>
-    </div>
-
-    <div class="button">
-      <input onclick="choosePic();" type="button" value="NEW PAIRING" />
+      <div class="right">
+        <img src="#" width="30%" id="myPicture2" alt="some image" />
+      </div>
+      <div class="button">
+        <input onclick="choosePic();" type="button" value="NEW PAIRING" />
+      </div>
+      <div class="button">
+        <input
+          onclick="clearMyInterval();"
+          type="button"
+          value="Cancel Interval"
+        />
+      </div>
     </div>
 
     <script src="app.js"></script>

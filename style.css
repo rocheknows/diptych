@@ -3,7 +3,7 @@
   margin: 0px;
 }
 body {
-  margin: 10%;
+  margin: 0px;
   width: 100%;
   width: 100vw;
   overflow: hidden;
@@ -14,12 +14,13 @@ html {
 .gallery {
   display: flex;
   flex-direction: row;
-  max-height: 50%;
+  margin: 10%;
+  padding: 0px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
 }
-img {
-  height: 50%;
-}
-
+                                                          
 .button {
   width: 50%;
   display: flex;
@@ -34,6 +35,11 @@ input[type="button"] {
   color: white;
   padding: 5px 5px;
   text-decoration: none;
-  margin: 4px 2px;
+  top: 40px;
+  left: 46%;
   cursor: pointer;
+  position: fixed;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }

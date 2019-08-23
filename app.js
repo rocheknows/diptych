@@ -25,6 +25,15 @@ function choosePic() {
   var randomNum = Math.floor(Math.random() * myPix.length);
   document.getElementById("myPicture").src = myPix[randomNum];
 }
+
+var myInterval = setInterval(() => {
+  choosePic();
+}, 10 * 1000);
+
+function clearMyInterval() {
+  console.error("clearing interval");
+  clearInterval(myInterval);
+}
 /*/
 //2nd img
 
