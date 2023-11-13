@@ -1,32 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Randomiser</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="gallery">
-      <div class="left">
-        <img src="#" width="30%" id="myPicture" alt="some image" />
-      </div>
-      <div class="right">
-        <img src="#" width="30%" id="myPicture2" alt="some image" />
-      </div>
-      <div class="button">
-        <input onclick="choosePic();" type="button" value="NEW PAIRING" />
-      </div>
-      <div class="button">
-        <input
-          onclick="clearMyInterval();"
-          type="button"
-          value="Cancel Interval"
-        />
-      </div>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <script src="app.js"></script>
-  </body>
+		<title>🖼</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="gallery">
+			<div class="left">
+				<img
+					src="#"
+					id="myPicture"
+					alt="Missing image, Add images to /img folder "
+				/>
+			</div>
+			<div class="right frame">
+				<img
+					src="#"
+					id="myPicture2"
+					alt="Missing image, Add images to /img2 folder "
+				/>
+			</div>
+
+			<!-- <div class="button">
+				<input onclick="choosePic();" type="button" value="NEW PAIRING" />
+			</div>  -->
+		</div>
+		<div class="button">
+			<input onclick="choosePic();" type="button" value="New Pairing" />
+		</div>
+		<nav>
+			<section>
+				<p>
+					<button class="info" type="button" onclick="reveal();">
+						Diptych image generator
+					</button>
+					<span class="info2"
+						>Created to challenge sequencing techniques and practices in
+						photography and art. Developed by
+						<a href="https://tomroche.info">Tom Roche</a><br /><br />Images from
+						Tom's curation project - Space Pictures 2021</span
+					>
+				</p>
+				<div class="selection-div">
+					<div>
+						<h3>Frame Colour</h3>
+						<button
+							class="button selector"
+							type="button"
+							onclick="whiteFrame();"
+						>
+							White Frame
+						</button>
+						<button
+							class="button selector"
+							type="button"
+							onclick="woodFrame();"
+						>
+							Wood Frame
+						</button>
+						<button
+							class="button selector"
+							type="button"
+							onclick="blackFrame();"
+						>
+							Black Frame
+						</button>
+						<button class="button selector" type="button" onclick="noFrame();">
+							No Frame
+						</button>
+					</div>
+					<div>
+						<h3>Wall Colour</h3>
+						<button class="button selector" type="button" onclick="bgWhite();">
+							White
+						</button>
+						<button class="button selector" type="button" onclick="bgBlack();">
+							Black
+						</button>
+						<button class="button selector" type="button" onclick="bgGray();">
+							Grey
+						</button>
+						<br /><br /><br /><br />
+					</div>
+				</div>
+			</section>
+			<section>
+				<h5><a href="#">Source Code</a></h5>
+			</section>
+		</nav>
+
+		<script src="app.js"></script>
+	</body>
 </html>
