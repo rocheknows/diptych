@@ -6,4 +6,4 @@ Simply replace the images in the 'img' and 'img2 folder'
 
 Make sure to rename the images to 1.jpg, 2.jpg, 3.jpg,......10.jpg The code currently supports 10 images in each folder. This can be changed by adding more to the array of each ( follow format of example is unsure how )
 
-WIKI for more help
+https://github.com/rocheknows/randomiser/wiki for more help
